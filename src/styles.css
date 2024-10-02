@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+.height-0 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
+
+.height-0.expand {
+  max-height: 100%;
+  overflow: hidden;
+  transition: max-height 1.5s ease-out;
+}
+.story-content-details {
+  display: flex;
+}
+.yarl__container {
+  /* background-color: #353535 !important; */
+  background-color: var(--yarl__container_background_color, var(--yarl__color_backdrop, #353535)) !important;
+}
+.yarl__slide_captions_container.yarl__slide_description_container {
+  background-color: rgba(53, 53, 53, 0.5);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  border-radius: 12px;
+  bottom: 50%;
+}
+.yarl__slide_captions_container.yarl__slide_description_container {
+  max-width: 600px;
+}
+
+.stories-pages .story-image-inner img {
+  transition: all 1s;
+}
+
+.stories-pages .story-image-inner img:hover {
+  transform: scale(1.2) !important;
+}
+
+.configuration {
+  position: fixed;
+}
+
+.slide-indicator {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+#preloader {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.hero-video.features-3d .page-header-content h1 p {
+  font-size: 20px;
+  font-family: source-code-variable, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1;
+  overflow: hidden;
+  color: #fff;
+}
+
+@media (min-width: 320px) {
+  .hero-video.features-3d .page-header-content h1 p {
+    font-size: calc(20px + 20 * (100vw - 320px) / 1600);
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero-video.features-3d .page-header-content h1 p {
+    font-size: 40px;
+  }
+}
+
+.hero-video .page-header-content h2 p {
+  font-size: 14px;
+  font-family: ubuntu-light, sans-serif;
+  font-weight: 300;
+  line-height: 1.58;
+  padding-top: 20px;
+  color: #fff;
+  overflow: hidden;
+}
+canvas ~ div {
+  overflow: hidden !important;
+}
+.page-header-content small {
+  color: #fff;
+  font-size: 1rem;
+  text-transform: none;
+}
+.page-header-content h1 .page-header-content-divider {
+  width: 90%;
+  background-color: #fff;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-summary-infobox-title {
+  text-align: center;
+}
+.cart-summary-image-src {
+  position: static;
+}
+.cart-summary-infobox-title:after {
+  width: 100%;
+}
+.switch__radio .slider {
+  background-color: #122d8f;
+  /* background-color: #000; */
+}
+/* .cart-form-copy ul {
+  width: 80%;
+  margin: auto;
+} */
+.cart-form-copy ul li {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+
+.cart-form-copy ul li h4,
+.cart-form-copy ul li p {
+  color: #fff;
+}
+.cart-form-copy ul li .switch {
+  width: 60px;
+}
+
+.cart-form-copy ul li p {
+  position: absolute;
+  right: 100px;
+}
+
+.cart-form form label {
+  opacity: 1;
+  font-size: 18px;
+  text-transform: none;
+  padding-top: 5px;
+  line-height: 1.5;
+}
+.cart-form form > section > div.seat-label {
+  text-align: right;
+}
+
+.cart-form form > section > div label,
+.cart-form form > section > div p {
+  color: #fff;
+}
+
+.total-price-wrapper {
+  margin-top: 1em;
+}
+
+.total-price-wrapper section div label {
+  font-size: 20px;
+  text-transform: inherit;
+  margin-right: 2em;
+}
+
+.total-price-wrapper section div span,
+.total-price-wrapper section div label {
+  font-size: 22px;
+  color: #fff;
+  /* text-transform: inherit; */
+}
+
+.total-price-inner label,
+.total-price-inner span {
+  text-align: right;
+}
+.total-price-wrapper section {
+  grid-template-columns: none !important;
+}
+.ps-note-wrapper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 40px;
+}
+.ps-note {
+  font-size: 16px;
+  /* text-decoration: underline; */
+  color: #fff;
+}
+
+@media (min-width: 320px) {
+  .hero-video .page-header-content h2 p {
+    font-size: calc(14px + 12 * (100vw - 320px) / 1600);
+  }
+}
+@media (min-width: 1920px) {
+  .hero-video .page-header-content h2 p {
+    font-size: 26px;
+  }
+}
+@media (min-width: 320px) {
+  .hero-video .page-header-content h2 p {
+    padding-top: calc(20px + 20 * (100vw - 320px) / 1600);
+  }
+}
+@media (min-width: 1920px) {
+  .hero-video .page-header-content h2 p {
+    padding-top: 40px;
+  }
+}
